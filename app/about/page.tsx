@@ -16,7 +16,7 @@ export default function About() {
             envisioned. Subsequently, Michael quit the band and re-enrolled in
             college to earn his Bachelor's degree. But, Michael could never quit
             music, leading him to pursue a MM from NYU and ultimately an
-            internship in the mcgarrybowen music department, which was led at
+            internship in the Mcgarrybowen music department, which was led at
             that time by Rob Kaplan. Michael learned the craft of integrating
             music into advertising and excelled to the point where he, up until
             recently, ran Ogilvy's music department.
