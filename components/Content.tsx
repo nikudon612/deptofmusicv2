@@ -13,7 +13,7 @@ export default function Content() {
     },
     {
       id: 2,
-      client: "NatIonwIde",
+      client: "Nationwide",
       title: "Nationwide theme by H.E.R.",
       info: "Unique rendition of the Nationwide theme by H.E.R.",
       image: "/Nationwide.png",
@@ -21,7 +21,7 @@ export default function Content() {
     },
     {
       id: 3,
-      client: "VoLkswagon",
+      client: "Volkswagon",
       title: "VoLkswagon Sheep",
       info: "We did x, y and z",
       image: "/Sheep.png",
@@ -37,7 +37,7 @@ export default function Content() {
     },
     {
       id: 5,
-      client: "BudweIser",
+      client: "Budweiser",
       title: "BudweIser",
       info: "We did x, y and z",
       image: "/bud.png",
@@ -45,7 +45,7 @@ export default function Content() {
     },
     {
       id: 6,
-      client: "T-MobILe",
+      client: "T-Mobile",
       title: "T-MobILe",
       info: "I feel pretty",
       image: "/tmobile.png",
@@ -54,7 +54,7 @@ export default function Content() {
   ];
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen">
       <div className="grid grid-cols-3 ">
         {content.map((item) => (
           <div
@@ -68,8 +68,10 @@ export default function Content() {
                 className="object-cover w-full h-full"
               />
               <div className="flex flex-col items-center justify-center bg-brandBlue bg-opacity-50 p-2 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity group-hover:opacity-100">
-                <div className="text-center text-white">{item.title}</div>
-                <div className="text-center text-white">{item.client}</div>
+                {/* <div className="text-center text-white">{item.title}</div> */}
+                <div className="text-center text-brandWhite text-3xl font-bold">
+                  {item.client}
+                </div>
               </div>
             </div>
           </div>
