@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="h-[200px] w-screen">
+    <div className="h-[200px] w-screen flex items-center justify-between">
       <div className="flex flex-row items-center justify-between">
         <div className="pl-6">
           <Link href={"/"}>
@@ -23,11 +23,11 @@ function Footer() {
               Instagram
             </Link>
           </div>
-          <div>
-            <div className="text-xs">
-              © 2023 Dept of Music. All rights reserved.
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-end">
+        <div className="text-xs">
+          © 2023 Dept of Music. All rights reserved.
         </div>
       </div>
     </div>

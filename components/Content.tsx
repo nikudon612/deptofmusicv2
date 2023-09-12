@@ -1,8 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
+import Modal from "./Modal";
 
 export default function Content() {
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  const openModal = (item) => {
+    setSelectedItem(item);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
+  };
+
   const content = [
     {
       id: 1,
@@ -66,6 +77,7 @@ export default function Content() {
                 src={item.image}
                 alt={item.title}
                 className="object-cover w-full h-full"
+                onClick={() => openModal(item)} // Open modal when card is clicked
               />
               <div className="flex flex-col items-center justify-center bg-brandBlue bg-opacity-50 p-2 absolute top-0 left-0 right-0 bottom-0 opacity-0 transition-opacity group-hover:opacity-100">
                 {/* <div className="text-center text-white">{item.title}</div> */}
@@ -77,6 +89,13 @@ export default function Content() {
           </div>
         ))}
       </div>
+      {selectedItem && (
+        <Modal
+          isOpen={true} // Pass true to indicate that the modal is open
+          closeModal={closeModal}
+          videoSrc={selectedItem.link}
+        />
+      )}
     </div>
   );
 }

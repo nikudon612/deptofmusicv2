@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="h-screen w-screen flex flex-row items-center gap-6">
-      <div className="flex w-1/2 flex-col gap-4 items-center">
-        <div className="text-4xl"> About Us</div>
-        <div className="flex w-[720px] flex-col gap-6">
+    <div className="h-screen w-screen flex flex-row items-center gap-6 bg-brandBlue">
+      <div className="flex w-1/2 flex-col gap-4 pl-20">
+        <div className="text-4xl font-bold text-left"> About Us</div>
+        <div className="flex w-[720px] flex-col gap-6 items-center justify-center leading-8 text-m font-medium">
           <div>
             Michael Freeman's prodigious talents playing reed instruments
             brought him from his childhood home of New Orleans to Berklee
