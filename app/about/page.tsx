@@ -14,23 +14,21 @@ export default function About() {
             that time by Rob Kaplan. Michael learned the craft of integrating
             music into advertising and excelled to the point where he, up until
             recently, ran Ogilvy's music department.`;
+  const text2 = ` Rob's journey from mcgarrybowen took him to Sony Music Publishing,
+            where he represented the catalog to advertisers, brands and consumer
+            products manufacturers globally, and then to form his own music
+            supervision and production company, Wool & Tusk.`;
+  const text3 = ` Now, Rob and Michael have reunited to create the Department of
+            Music, your outsourced, in-house music department for any and all
+            music needs. Drop us a note and we'd love to tell you more.`;
   return (
     <div className="h-screen w-screen flex flex-row items-center gap-6 bg-brandBlue">
       <div className="flex w-1/2 flex-col gap-4 pl-20">
         <div className="text-4xl font-bold text-left"> About Us</div>
         <div className="flex w-[720px] flex-col gap-6 items-center justify-center leading-8 text-m font-medium">
           <div>{text}</div>
-          <div>
-            Rob's journey from mcgarrybowen took him to Sony Music Publishing,
-            where he represented the catalog to advertisers, brands and consumer
-            products manufacturers globally, and then to form his own music
-            supervision and production company, Wool & Tusk.
-          </div>
-          <div>
-            Now, Rob and Michael have reunited to create the Department of
-            Music, your outsourced, in-house music department for any and all
-            music needs. Drop us a note and we'd love to tell you more.
-          </div>
+          <div>{text2}</div>
+          <div>{text3}</div>
         </div>
       </div>
       <div className="w-1/2 flex items-center justify-center">
