@@ -93,7 +93,8 @@ export default function Content() {
         <Modal
           isOpen={true} // Pass true to indicate that the modal is open
           closeModal={closeModal}
-          videoSrc={selectedItem.link}
+          videoSrc={""}
+          // videoSrc={selectedItem.link}
         />
       )}
     </div>
