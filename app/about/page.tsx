@@ -1,13 +1,7 @@
 import Image from "next/image";
 
 export default function About() {
-  return (
-    <div className="h-screen w-screen flex flex-row items-center gap-6 bg-brandBlue">
-      <div className="flex w-1/2 flex-col gap-4 pl-20">
-        <div className="text-4xl font-bold text-left"> About Us</div>
-        <div className="flex w-[720px] flex-col gap-6 items-center justify-center leading-8 text-m font-medium">
-          <div>
-            Michael Freeman's prodigious talents playing reed instruments
+  const text = `Michael Freeman's prodigious talents playing reed instruments
             brought him from his childhood home of New Orleans to Berklee
             College of Music, where Michael's ska band was signed to Tim
             Armstrong's Hellcat Records. After successive Vans' Warped Tours,
@@ -19,8 +13,13 @@ export default function About() {
             internship in the Mcgarrybowen music department, which was led at
             that time by Rob Kaplan. Michael learned the craft of integrating
             music into advertising and excelled to the point where he, up until
-            recently, ran Ogilvy's music department.
-          </div>
+            recently, ran Ogilvy's music department.`;
+  return (
+    <div className="h-screen w-screen flex flex-row items-center gap-6 bg-brandBlue">
+      <div className="flex w-1/2 flex-col gap-4 pl-20">
+        <div className="text-4xl font-bold text-left"> About Us</div>
+        <div className="flex w-[720px] flex-col gap-6 items-center justify-center leading-8 text-m font-medium">
+          <div>{text}</div>
           <div>
             Rob's journey from mcgarrybowen took him to Sony Music Publishing,
             where he represented the catalog to advertisers, brands and consumer
